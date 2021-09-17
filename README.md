@@ -1,2 +1,2 @@
 # AzureScriptsDJC
-Some nifty li' scripts I have created in my work that may be helpful
+Some nifty lil' scripts I have created in my work that may be helpful for you.
