@@ -31,7 +31,7 @@ $gallery = Get-AzGallery `
 #   3. snap the image VM then create image from snapshot
 
 $Disk = (Get-AzDisk -name $vm.StorageProfile.OsDisk.Name)
-$snapConfig = New-AzSnapshotConfig -SourceUri $ManualID -CreateOption Copy -Location $vm.Location 
+$snapConfig = New-AzSnapshotConfig -SourceUri $Disk.Id -CreateOption Copy -Location $Disk.Location 
 $snapshotname = ($vm.name + '_snapshot')
 
 New-AzSnapshot  -ResourceGroupName $VmRG `
