@@ -1,5 +1,5 @@
 <#  ************************************************************************************************
-    This script automates all steps in the creation of a Azure Compute Gallery Definition,
+    This script automates all steps in the creation of a Azure Compute Gallery Definition and
     Gallery Version using the image created in the beginning steps from the reference VM's snapshot.
     If the disk name is identical to another disk in this sub (in case of a VM pipelined clone), 
     then this script will fail. If you do not need all steps then comment out your local branch copy. 
